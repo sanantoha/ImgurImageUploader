@@ -1,0 +1,31 @@
+package com.leadiq.domain
+
+final case class ImgurUploadData(id: String,
+                            title: Option[String],
+                            description: Option[String],
+                            datetime: Double,
+                            `type`: String,
+                            animated: Boolean,
+                            width: Double,
+                            height: Double,
+                            size: Double,
+                            views: Double,
+                            bandwidth: Double,
+                            vote: Option[String],
+                            favorite: Boolean,
+                            nsfw: Option[String],
+                            section: Option[String],
+                            account_url: Option[String],
+                            account_id: Double,
+                            is_ad: Boolean,
+                            in_most_viral: Boolean,
+                            has_sound: Boolean,
+                            tags: List[String],
+                            ad_type: Double,
+                            ad_url: String,
+                            in_gallery: Boolean,
+                            deletehash: String,
+                            name: String,
+                            link: String)
+
+final case class ImgurUploadResponse(data: ImgurUploadData, success: Boolean, status: Double)
